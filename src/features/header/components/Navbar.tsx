@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import ThemeToggle from "./ThemeToggle";
-import ContactButton from "./ContactButton";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -27,7 +26,6 @@ const Navbar = () => {
       <DesktopNav isScrolled={isScrolled} />
       <div className="flex items-center gap-4">
         <ThemeToggle />
-        <ContactButton />
         <MobileNav />
       </div>
     </nav>
