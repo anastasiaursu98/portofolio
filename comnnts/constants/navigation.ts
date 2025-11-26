@@ -1,4 +1,4 @@
-import { NavItem } from "@/types/navigation";
+import { NavItem } from "../types";
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#top" },
@@ -7,3 +7,4 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Projects", href: "#work" },
   { label: "Contact", href: "#contact" },
 ];
+

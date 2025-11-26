@@ -1,16 +1,18 @@
 "use client";
-import Navbar from "@/components/navbar/Navbar";
-import Header from "@/components/header/Header";
-import About from "@/components/about/About";
-import Work from "@/components/work/Work";
+import { Header } from "@/features/home";
+import { About } from "@/features/about";
+import { Skills } from "@/features/skills";
+import { Work } from "@/features/work";
+import { Footer } from "@/features/footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Header />
       <About />
+      <Skills />
       <Work />
+      <Footer />
     </>
   );
 }

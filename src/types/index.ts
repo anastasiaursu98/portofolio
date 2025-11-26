@@ -1,9 +1,4 @@
 // Common types used across the application
-export interface NavItem {
-  label: string;
-  href: string;
-}
-
 export interface Theme {
   isDark: boolean;
   toggleTheme: () => void;
