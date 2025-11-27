@@ -1,6 +1,12 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 type Theme = "dark" | "light";
 
@@ -13,10 +19,8 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("light");
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     // Check local storage or system preference
     const savedTheme = localStorage.getItem("theme") as Theme | null;
     if (savedTheme) {
@@ -47,11 +51,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("theme", newTheme);
   };
 
-  // Prevent hydration mismatch by rendering nothing until mounted
-  // Or render children but with default theme (light) to avoid layout shift, 
-  // but usually for theme toggles we might want to wait or just accept the flash if not using next-themes script injection.
-  // For simplicity in this custom implementation, we'll just render children.
-  
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
