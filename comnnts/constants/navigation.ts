@@ -8,3 +8,4 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
+
