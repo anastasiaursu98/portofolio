@@ -2,10 +2,10 @@
 import React, { useRef } from "react";
 import { WORK_DATA } from "../constants/work-data";
 import { useCarousel } from "../hooks/useCarousel";
-import { WorkHeader } from "./WorkHeader";
+import SectionHeader from "@/components/SectionHeader";
 import { ProjectCard } from "./ProjectCard";
-import { CarouselNavigation } from "./CarouselNavigation";
-import { CarouselDots } from "./CarouselDots";
+import { CarouselNavigation } from "@/components/CarouselNavigation";
+import { CarouselDots } from "@/components/CarouselDots";
 
 const Work: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -30,9 +30,14 @@ const Work: React.FC = () => {
   return (
     <div
       id="work"
-      className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-violet-50 to-white"
+      className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-violet-50 to-white dark:from-[#0a0118] dark:to-[#0f0322]"
     >
-      <WorkHeader />
+      <SectionHeader
+        subtitle="My Portfolio"
+        title="Featured Projects"
+        highlightedText="Projects"
+        description="Step into my digital playground — a showcase of front-end creations crafted with code, creativity, and a passion for seamless user experiences."
+      />
 
       {/* Carousel Container */}
       <div className="relative max-w-7xl mx-auto">
@@ -70,4 +75,3 @@ const Work: React.FC = () => {
 };
 
 export default Work;
-

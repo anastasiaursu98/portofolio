@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/features/header/components/Navbar";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -26,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased min-h-screen bg-gradient-to-br from-white via-gray-50to-gray-100 leading-8 overflow-x-hidden`}
+        className={`${outfit.className} ${ovo.className} antialiased min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-[#0a0118] dark:via-[#0f0322] dark:to-black text-gray-900 dark:text-white leading-8 overflow-x-hidden transition-colors duration-500`}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

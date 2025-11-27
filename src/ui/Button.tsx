@@ -14,9 +14,9 @@ const variants = {
   primary:
     "bg-gradient-to-r from-violet-500 to-purple-500 text-white hover:from-violet-600 hover:to-purple-600 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95",
   secondary:
-    "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 hover:from-gray-200 hover:to-gray-300 shadow-md hover:shadow-lg",
+    "bg-gradient-to-r from-gray-100 to-gray-200 dark:from-black dark:via-purple-950/40 dark:to-black text-gray-800 dark:text-white hover:from-gray-200 hover:to-gray-300 dark:hover:from-purple-950/60 dark:hover:via-purple-900/50 dark:hover:to-purple-950/60 shadow-md hover:shadow-lg dark:border dark:border-purple-900/30",
   outline:
-    "border-2 border-gray-300 text-gray-700 hover:border-violet-500 hover:text-violet-600 hover:bg-violet-50 backdrop-blur-sm",
+    "border-2 border-gray-300 dark:border-purple-900/50 text-gray-700 dark:text-white hover:border-violet-500 dark:hover:border-purple-500 hover:text-violet-600 dark:hover:text-purple-400 hover:bg-violet-50 dark:hover:bg-purple-950/30 backdrop-blur-sm",
 };
 
 export function Button({

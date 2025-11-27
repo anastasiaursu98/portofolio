@@ -8,6 +8,7 @@ interface ContactItemProps {
   href?: string;
   target?: string;
   rel?: string;
+  className?: string;
 }
 
 const ContactItem: React.FC<ContactItemProps> = ({
@@ -17,6 +18,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
   href,
   target,
   rel,
+  className = "",
 }) => {
   const isClickable = !!href;
   const iconClassName = isClickable
@@ -26,7 +28,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
   const content = (
     <>
       <div className={iconClassName}>
-        <Icon className="w-6 h-6" />
+        <Icon className="w-6 h-6 text-white" />
       </div>
       <div>
         <p className="text-sm text-gray-400">{label}</p>
@@ -37,7 +39,8 @@ const ContactItem: React.FC<ContactItemProps> = ({
 
   const baseClassName =
     "flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10";
-  const clickableClassName = `${baseClassName} group hover:bg-white/10 transition-all duration-300 hover:border-purple-400`;
+  const clickableClassName = `${baseClassName} group hover:bg-white/10 transition-all duration-300 hover:border-purple-400 ${className}`;
+  const nonClickableClassName = `${baseClassName} ${className}`;
 
   if (href) {
     return (
@@ -47,7 +50,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
     );
   }
 
-  return <div className={baseClassName}>{content}</div>;
+  return <div className={nonClickableClassName}>{content}</div>;
 };
 
 export default ContactItem;

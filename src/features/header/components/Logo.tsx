@@ -7,7 +7,7 @@ const Logo = () => {
   };
 
   return (
-    <a href="#top" onClick={scrollToTop} className="text-2xl font-semibold">
+    <a href="#top" onClick={scrollToTop} className="text-2xl font-semibold dark:text-white">
       Anastasia<span className="text-red-500">.</span>
     </a>
   );

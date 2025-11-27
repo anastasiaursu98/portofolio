@@ -35,3 +35,4 @@ const DesktopNav = ({ isScrolled }: { isScrolled: boolean }) => {
 
 export default DesktopNav;
 
+

@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import Subheading from "./Subheading";
-import KeyHighlights from "./KeyHighlights";
+import KeyHighlights from "@/components/KeyHighlights";
 import CTAButtons from "./CTAButtons";
 
 interface MainHeadingProps {
@@ -16,7 +16,21 @@ const MainHeading = ({ onContactClick }: MainHeadingProps) => {
     >
       <Title />
       <Subheading />
-      <KeyHighlights />
+      <KeyHighlights
+        variant="badges"
+        badges={[
+          {
+            label: "Available for Projects",
+            color: "green",
+            pulse: true,
+          },
+          {
+            label: "Bachelor's in Computer Science",
+            color: "violet",
+          },
+        ]}
+        className="mt-6"
+      />
       <CTAButtons onContactClick={onContactClick} />
     </div>
   );
