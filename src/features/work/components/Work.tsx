@@ -33,10 +33,10 @@ const Work: React.FC = () => {
       className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-violet-50 to-white dark:from-[#0a0118] dark:to-[#0f0322]"
     >
       <SectionHeader
-        subtitle="My Portfolio"
-        title="Featured Projects"
+        title="Technical Projects"
+        subtitle="My Development Journey"
         highlightedText="Projects"
-        description="Step into my digital playground — a showcase of front-end creations crafted with code, creativity, and a passion for seamless user experiences."
+        description="Step into my development journey—a showcase of frontend solutions crafted with modern technologies, clean code, and a passion for exceptional user experiences ."
       />
 
       {/* Carousel Container */}

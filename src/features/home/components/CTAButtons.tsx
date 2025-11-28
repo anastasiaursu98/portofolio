@@ -14,7 +14,7 @@ const CTAButtons = ({ onContactClick }: CTAButtonsProps) => {
       <Button
         variant="primary"
         size="lg"
-        className="px-12 text-base shadow-lg hover:shadow-xl rounded-2xl"
+        className="px-14 text-base shadow-2xl hover:shadow-xl rounded-xl"
         onClick={onContactClick}
       >
         Contact Me
@@ -22,7 +22,7 @@ const CTAButtons = ({ onContactClick }: CTAButtonsProps) => {
       <Button
         variant="outline"
         size="lg"
-        className="px-12 text-base rounded-2xl"
+        className="px-14 text-base shadow-2xl hover:shadow-xl rounded-xl"
       >
         <Link href="/Ursu-Anastasia-CV.pdf" target="_blank">
           My Resume

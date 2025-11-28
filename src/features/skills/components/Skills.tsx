@@ -11,10 +11,10 @@ const Skills: React.FC = () => {
       className="w-full px-[12%] py-20 scroll-mt-20 bg-gradient-to-b from-white to-violet-50 dark:from-[#0f0322] dark:to-[#0a0118]"
     >
       <SectionHeader
-        subtitle="My Expertise"
-        title="Technical Skills"
-        highlightedText="Skills"
-        description="Technologies and tools I use to bring ideas to life"
+        subtitle="My Tech Stack"
+        title="Technologies & "
+        highlightedText="Tools"
+        description="Core technologies I use to build scalable, high-performance applications"
       />
 
       {/* Skills Grid */}

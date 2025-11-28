@@ -20,12 +20,12 @@ const MainHeading = ({ onContactClick }: MainHeadingProps) => {
         variant="badges"
         badges={[
           {
-            label: "Available for Projects",
+            label: "Open to new opportunities",
             color: "green",
             pulse: true,
           },
           {
-            label: "Bachelor's in Computer Science",
+            label: "Master’s Degree – Computer Science",
             color: "violet",
           },
         ]}

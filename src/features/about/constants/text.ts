@@ -10,7 +10,7 @@ export const infoList: InfoListItem[] = [
   {
     icon: GraduationCap,
     title: "Education",
-    description: "Bachelor's in Computer Science - Stefan Cel Mare University",
+    description: "Master's in Computer Science - Stefan Cel Mare University",
   },
   {
     icon: BriefcaseBusiness,
@@ -20,7 +20,9 @@ export const infoList: InfoListItem[] = [
 ];
 
 export const keyHighlights: string[] = [
-  "Extensive experience in React, Next.js, Redux, and TypeScript",
-  "Contributed to enterprise-level projects and production environments",
-  "Strong collaborator, working effectively with cross-functional teams",
+  "Delivered production-ready solutions for 6+ diverse industry projects",
+  "Expert in modern React ecosystem: Next.js, TypeScript, and state management",
+  "Built real-time features (AI chatbots, WebSockets) for enterprise applications",
+  "Performance-focused developer with cross-platform deployment experience",
+  "Strong academic background with Master's degree in Computer Science",
 ];
