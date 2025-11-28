@@ -1,14 +1,14 @@
 "use client";
-import { Header } from "@/features/home";
+import { Home } from "@/features/home"; 
 import { About } from "@/features/about";
 import { Skills } from "@/features/skills";
 import { Work } from "@/features/work";
 import { Footer } from "@/features/footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Header />
+      <Home />
       <About />
       <Skills />
       <Work />

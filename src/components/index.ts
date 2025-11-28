@@ -6,8 +6,8 @@ export { default as ProfileImage } from "./ProfileImage";
 export { default as SectionHeader } from "./SectionHeader";
 export { default as KeyHighlights } from "./KeyHighlights";
 export { default as ContactItem } from "./ContactItem";
-export { CarouselDots } from "./CarouselDots";
-export { CarouselNavigation } from "./CarouselNavigation";
+export { CarouselDots } from "./carusel/CarouselDots";
+export { CarouselNavigation } from "./carusel/CarouselNavigation";
 
 // UI Components
 export { Button } from "./ui/button";

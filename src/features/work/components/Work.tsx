@@ -4,8 +4,8 @@ import { WORK_DATA } from "../constants/work-data";
 import { useCarousel } from "../hooks/useCarousel";
 import SectionHeader from "@/components/SectionHeader";
 import { ProjectCard } from "./ProjectCard";
-import { CarouselNavigation } from "@/components/CarouselNavigation";
-import { CarouselDots } from "@/components/CarouselDots";
+import { CarouselNavigation } from "@/components/carusel/CarouselNavigation";
+import { CarouselDots } from "@/components/carusel/CarouselDots";
 
 const Work: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);

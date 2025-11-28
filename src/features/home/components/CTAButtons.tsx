@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 interface CTAButtonsProps {
   onContactClick: () => void;
 }
@@ -24,7 +24,9 @@ const CTAButtons = ({ onContactClick }: CTAButtonsProps) => {
         size="lg"
         className="px-12 text-base rounded-2xl"
       >
-        My Resume
+        <Link href="/Ursu-Anastasia-CV.pdf" target="_blank">
+          My Resume
+        </Link>
       </Button>
     </div>
   );

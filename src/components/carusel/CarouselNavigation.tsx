@@ -23,14 +23,14 @@ export const CarouselNavigation: React.FC<CarouselNavigationProps> = ({
         className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg hover:bg-violet-500 hover:text-white dark:hover:bg-violet-600 transition-all duration-300 transform hover:scale-110 border-2 border-violet-200 dark:border-violet-700 hover:border-violet-500 dark:hover:border-violet-400 ${className}`}
         aria-label={previousLabel}
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-6 h-6 dark:text-white" />
       </button>
       <button
         onClick={onNext}
         className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg hover:bg-violet-500 hover:text-white dark:hover:bg-violet-600 transition-all duration-300 transform hover:scale-110 border-2 border-violet-200 dark:border-violet-700 hover:border-violet-500 dark:hover:border-violet-400 ${className}`}
         aria-label={nextLabel}
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-6 h-6 dark:text-white" />
       </button>
     </>
   );
